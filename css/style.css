@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&family=Poppins:wght@300;400;500;600;700&display=swap');
+:root{
+    --primaryFont: "Poppins", sans-serif;
+    --secondaryFont: "PT Sans", sans-serif;
+    --primaryColor:#FFCC00;
+    --secondaryColor: #353535;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6,ul,ol,p,span{
+margin: 0;
+padding: 0;
+}
+body{
+    font-family: var(--primaryFont);
+    
+}
+.button1{
+    border-radius: 20px;
+    border: 1px solid #000;
+color: var(--secondaryColor);
+font-size: 20px;
+font-weight: 600;
+padding: 16px 45px;
+display: inline-block;
+
+}
+/*  navber starts */
+@media(min-width:300px) and (max-width:800px){
+    nav{
+        background-color: #fff;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    }
+}
+#menu ul li a{
+    text-transform: uppercase;
+    color:var(--secondaryColor);
+font-size: 15px;
+font-weight: 500;
+padding: 18px 22px 8px;
+text-align: right;
+position: relative;
+
+}
+nav .navbar-toggler{
+    box-shadow: none !important;
+border: 0;
+}
+#menu ul li a::after{
+    content: '';
+background-color: var(--secondaryColor);
+    width: 0%;
+    height: 1px;
+    transition: 0.3s;
+    bottom: 0;
+    left: 0;
+position: absolute;
+}
+#menu ul li:hover a::after{
+    width: 100%;
+}
+
+/*  navber ends */
+
+/* banner starts */
+#banner{
+    padding: 30px 0;
+}
+
+.banner_cnt h3{
+    color:var(--secondaryColor);
+font-size: 24px;
+font-weight: 400;
+}
+.banner_cnt h1{
+    color:var(--secondaryColor);
+    font-family: var(--secondaryFont);
+font-size: 64px;
+font-weight: 700;
+padding: 15px 0 25px;
+}
+.banner_cnt p{
+    color: var(--secondaryColor);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 180%;
+}
+.banner_cnt a{
+margin: 45px 40px 45px 0;
+}
+.button1:hover{
+    background: #FC0;
+color: #FFF;
+border: 0;
+}
+.button1:hover svg path{
+stroke: white;
+}
+.banner_img {
+    position: relative;
+    
+}
+.button2{
+    top:124px;
+    padding: 13px 20px;
+    border-radius: 10px;
+    position: absolute;
+    color: #7A7A7A;
+font-size: 12px;
+font-weight: 400; 
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.links label{
+    color:var(--secondaryColor);
+font-size: 22px;
+font-weight: 500; 
+margin-right: 42px;
+}
+.links a{
+    margin-right:16px;
+    color: #000;
+    display: inline-block;
+    padding: 10px;
+width: 40px;
+height: 40px; 
+line-height: 23px;
+border-radius: 50%;
+font-size: 20px;
+background-color: #F4F3F3;
+}
+.banner_img_card{
+    border-radius: 16px;
+    padding: 23px 34px;
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+display: inline-block;
+    bottom: 28px;
+    background-color: #FFF;
+    text-align: center;
+
+}
+.banner_img_card h3{
+    color:var(--secondaryColor);
+    font-size: 12px;
+    font-weight: 500;
+
+}
+.banner_img_card p{
+    color: #7A7A7A;
+    font-size: 8px;
+    font-weight: 500; 
+
+}
+/* banner ends */
+/* class common content starts*/
+
+.common_cnt h2{
+font-family: var(--secondaryFont);
+font-size: 50px;
+padding: 78px 0 26px;
+}
+.common_cnt p{
+    color: var(--secondaryColor); 
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 190%;
+    padding-bottom: 45px;
+}
+.common_cnt_button{
+    display: inline-block;
+    color: var(--secondaryColor); 
+font-size: 18px;
+font-weight: 500; 
+border-radius: 20px;
+border: 1px solid #000; 
+padding: 17px 44px;
+}
+/* class common content ends*/
+
+/* about starts */
+#about{
+background: linear-gradient(95deg, #FC0 -21.46%, #FFF5CB 112.13%);
+}
+
+
+.about_card{
+    border-radius: 20px;
+background: #FFF;
+box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.08);
+margin: 151px 0 165px 0;
+padding: 57px 47px;
+text-align: center;
+}
+.about_card h3{
+    font-size: 22px;
+    font-weight: 600; 
+}
+.about_card p{
+    color: #7A7A7A;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 190%;
+}
+@media (max-width:991px){
+.about_card .part2{
+text-align: left;
+}
+}
+/* about ends */
